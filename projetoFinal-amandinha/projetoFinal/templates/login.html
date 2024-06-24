@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+  <link href="https://fonts.googleapis.com/css2?family=Brygada+1918:ital@1&family=Inter:wght@200;400&family=Italiana&family=Jua&display=swap" rel="stylesheet">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café Gourmet - Login</title>
+    <link rel="stylesheet" href="/static/css/login.css">
+</head>
+<body>
+    <div class="login-container">
+        <form action="/login" method="post" class="login-form">
+            <h2>Entre na sua conta</h2>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Senha:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Login</button>
+            <p>Não tem uma conta? <a href="/register">Registre-se aqui</a></p>
+        </form>
+    </div>
+</body>
+</html>

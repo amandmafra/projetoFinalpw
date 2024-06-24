@@ -1,0 +1,312 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+:root {
+  font-size: 62.5%;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background-color: #120702;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 100px;
+  z-index: 100;
+}
+
+.logo img {
+  width: 115px;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+}
+
+.search-wrapper {
+  position: relative;
+}
+
+input[type="text"] {
+  padding: 10px 30px 10px 10px; 
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  width: 750px;
+}
+
+.fa-search {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #120702;
+  margin-right: 10px;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+}
+
+.user img {
+  width: 30px;
+  margin-right: 10px;
+}
+
+.user-message {
+  font-size: 1.2rem;
+  color: white;
+  margin-right: 100px;
+}
+
+.user-message a {
+  color: white;
+  text-decoration: none;
+}
+
+.user-message a:hover {
+  color: #E84A06;
+}
+
+/*main*/
+
+.main-content {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 70px;
+}
+
+.menu li {
+  font-family: 'Brygada 1918', serif;
+  font-size: 1.6rem;
+  display: flex;
+  align-items: center;
+  color: #000000;
+}
+
+.menu li i {
+  margin-right: 10px;
+  color: #120702;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: inherit; 
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.menu li a:hover {
+  transform: translateY(-3px); 
+  color: #E84A06;
+}
+
+.menu li a:hover i {
+  color: #E84A06;
+}
+
+.button-promo {
+  font-family: 'Brygada 1918', serif;
+  font-size: 1.6rem;
+
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 70px;
+  width: 150px; 
+  background-color: #000;
+  color: #fff;
+  padding: 5px 16px; 
+  border-radius: 35px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.button-promo:hover {
+  background-color: #E84A06;
+  color: #eee;
+}
+
+#bebida-gourmet-link {
+  text-decoration: none;
+  color: black; 
+}
+
+#bebida-gourmet-icon,
+#bebida-gourmet-text {
+  transition: color 0.3s ease-in-out; 
+}
+
+#bebida-gourmet-link.active {
+  font-weight: bold; 
+}
+
+#bebida-gourmet-link.active #bebida-gourmet-icon,
+#bebida-gourmet-link.active #bebida-gourmet-text {
+  color: #E84A06; 
+}
+
+.image-main {
+  position: relative;
+  width: 100%;
+  height:550px;
+  overflow: hidden;
+}
+
+.image-main img {
+  width: 100%;
+  height: 605px;
+  margin-top: 20px;
+  display: block;
+}
+
+.text-overlay {
+  position: absolute;
+  bottom: 20px; 
+  left: 70px; 
+  margin-bottom: 40px;
+  color: white;
+}
+
+.text-overlay h2 {
+  font-size: 3rem;
+  font-family: 'Brygada 1918', serif;
+  font-weight: 400;
+  color: #E84A06;
+}
+
+.text-overlay h3 {
+  margin: 5px 0;
+  font-size: 6.4rem;
+  font-family: 'Jua', sans-serif;
+}
+
+.text-overlay hr {
+  width: 140px;
+  margin-top: 5px;
+  border: none;
+  border-top: 2px solid #E84A06;
+}
+
+.image-secondary {
+  text-align: center; 
+}
+
+.image-secondary img {
+  width: 120px; 
+  height: auto;
+  margin-top: 20px;
+}
+
+.image-secondary p {
+  font-family: 'Brygada 1918', serif;
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+.menu-section {
+  margin-top: 50px;
+  padding: 0 100px;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 30px; 
+}
+
+.menu-item {
+  display: flex;
+  align-items: flex-start;
+  padding: 10px;
+  border: 1px solid #ccc;
+  overflow: hidden;
+  background-color: #f8f8f7;
+  transition: transform 0.3s ease;
+}
+
+.menu-item:hover {
+  transform: scale(1.05);
+}
+
+.menu-item img {
+  width: 250px; 
+  height: 250px;
+  object-fit: cover;
+  margin-right: 15px;
+}
+
+.menu-item p {
+  margin: 0; 
+  font-size: 1.6rem; 
+}
+
+.menu-description {
+  padding: 30px;
+}
+
+.menu-description h2 {
+  font-family: 'Brygada 1918', serif;
+  font-size: 2.2rem;
+  color: #E84A06;
+  margin-bottom: 20px;
+}
+
+.menu-description ul {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.4rem;
+  margin-left: 15px;
+  line-height: 1.5;
+}
+
+footer {
+  margin-top: 25px;
+  background-color: #120702;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 100px;
+  z-index: 100;
+}
+
+footer h2 {
+  font-family: 'Jua', sans-serif;
+  font-size: 2.8rem;
+  color: #E84A06;
+  text-align: left;
+  margin-right: 100px;
+}
+
+footer h3 {
+  font-size: 1.4rem;
+  margin-right: 20px;
+}
+
+.social-icons a {
+  color: white;
+  font-size: 24px;
+  margin-right: 15px;
+}
+

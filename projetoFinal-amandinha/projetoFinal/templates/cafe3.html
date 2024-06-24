@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Brygada+1918:ital@1&family=Inter:wght@200;400&family=Italiana&family=Jua&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Café Gourmet - Cafeteiras</title>
+  <link rel="stylesheet" href="/static/css/cafe3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <script src="/js/search.js"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="logo">
+      <a href="/index"><img src="/assets/image/logo café.png" alt="Logo Café"></a>
+    </div>
+    <div class="search">
+      <div class="search-wrapper">
+        <input type="text" id="searchInput" placeholder="Pesquisar">
+        <i class="fas fa-search search-icon"></i>
+      </div>
+    </div>
+    <div class="user">
+      <img src="/assets/image/sacola.svg" alt="Ícone de Sacola">
+      <img src="/assets/image/perfil.svg" alt="Ícone de Perfil">
+      <span class="user-message">
+        Olá!<br>
+        <a href="/login">Entre</a> ou <a href="/register">Registre-se</a>
+      </span>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <ul class="menu">
+      <li><a href="/cafe1"><i class="fas fa-cocktail"></i> Bebida Gourmet</a></li>
+      <li><a href="/cafe2"><i class="fas fa-mug-hot"></i> Café</a></li>
+      <li><a href="/cafe3" id="cafeteiras"><i class="fas fa-blender"></i> Cafeteiras</a></li>
+      <li><a href="/cafe4"><i class="fas fa-capsules"></i> Cápsulas de Café</a></li>
+    </ul>
+    <a href="pagina_promocoes.html" class="button-promo">Promoção</a>
+  </main>
+
+  <div class="image-main">
+    <img src="https://img.freepik.com/fotos-gratis/tiro-de-foco-seletivo-de-uma-maquina-de-cafe-expresso-saboroso-cafe-quente-pela-manha_181624-8504.jpg?t=st=1718994901~exp=1718998501~hmac=0330892b9c07da7f87f24e84c2b0042e7875ac7ab9a460e9a54b5d3296185c29&w=740" alt="Imagem Principal">
+    <div class="text-overlay">
+      <h2>Descubra</h2>
+      <h3>Nossas <br> Cafeteiras</h3>
+      <hr>
+    </div>
+  </div>
+  
+  <div class="image-secondary">
+    <img src="/assets/image/cafe desenho.png" alt="Imagem Menor">
+    <p>Encontre a cafeteira ideal para o seu café perfeito. Temos uma seleção de máquinas de café de qualidade para todas as suas necessidades.</p>
+  </div>
+
+  <section class="menu-section">
+    <div class="menu-grid">
+      <div class="menu-item">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJi1W6f8w_HjjzMAF0sxuRq5qaDNMSAIRBdA&usqp=CAU" alt="Cafeteira 1">
+        <div class="menu-description">
+          <h2>Cafeteira Automática</h2>
+          <p>Prepare cafés deliciosos com o toque de um botão. Ideais para uso doméstico e comercial.</p>
+        </div>
+      </div>
+
+      <div class="menu-item">
+        <img src="data:image/jpeg;base64,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" alt="Cafeteira 2">
+        <div class="menu-description">
+          <h2>Cafeteira de Filtro</h2>
+          <p>Para aqueles que preferem o tradicional café de filtro, com opções para diferentes tamanhos de preparo.</p>
+        </div>
+      </div>
+
+      <div class="menu-item">
+        <img src="data:image/jpeg;base64,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" alt="Cafeteira 3">
+        <div class="menu-description">
+          <h2>Cafeteira Italiana</h2>
+          <p>Experimente o verdadeiro espresso italiano com nossas cafeteiras tradicionais, disponíveis em vários tamanhos.</p>
+        </div>
+      </div>
+
+      <div class="menu-item">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEW-8hGgEkUSPWYjtxpv6bH1ZmbFggrInuEQ&usqp=CAU" alt="Cafeteira 4">
+        <div class="menu-description">
+          <h2>Cafeteira Portátil</h2>
+          <p>Perfeitas para viagens ou para quem deseja um café fresco em qualquer lugar. Compactas e eficientes.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <h2>Coffee Gourmet</h2>
+    <h3>Fale Conosco:</h3>
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-whatsapp"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-facebook"></i></a>
+    </div>
+  </footer>
+</body>
+</html>
